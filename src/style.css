@@ -39,7 +39,7 @@ h1 {
   }
 }
 h2 {
-  color: #fff;
+  color: #fef5ea;
   font-size: 20px;
   font-family: "Roboto Mono", monospace;
   text-align: center;
@@ -54,6 +54,7 @@ form {
 }
 .topic {
   color: #757575;
+  background-color: #fef5ea;
   font-size: 16px;
   font-family: "Comfortaa", sans-serif;
   line-height: 1.5;
@@ -79,7 +80,7 @@ form {
 
 .submit-button:hover {
   transform: translateY(3px);
-  filter: contrast(80%);
+  filter: contrast(70%);
 }
 .submit-button:active {
   opacity: 0.5;
@@ -91,7 +92,7 @@ form {
   margin-bottom: 20px;
 }
 .fact {
-  color: #ffff;
+  color: #fef5ea;
   background-color: #03001e;
   font-size: 16px;
   font-family: "Roboto Mono", monospace;
