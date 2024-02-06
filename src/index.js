@@ -19,7 +19,7 @@ function generateFact(event) {
 
   let factElement = document.querySelector("#fact");
   factElement.classList.remove("hidden");
-  factElement.innerHTML = `<div class = "blink"> 🤖 Finding a fact about ${topicInput.value} for you</div>`;
+  factElement.innerHTML = `<div class = "blink"> 🤖 Finding a fact about "${topicInput.value}" for you</div>`;
 
   axios.get(apiURL).then(displayFact);
 }

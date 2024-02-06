@@ -35,12 +35,6 @@ h1 {
     background-position: 0% 50%;
   }
 }
-h2 {
-  color: #fef5ea;
-  font-size: 20px;
-  font-family: "Roboto Mono", monospace;
-  text-align: center;
-}
 main {
   margin-bottom: 20px;
 }
@@ -91,8 +85,8 @@ form {
 .fact {
   color: #fef5ea;
   background-color: #03001e;
-  font-size: 16px;
-  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  font-family: monospace;
   line-height: 2;
   border-left: 3px solid #ff6564;
   padding: 20px;
@@ -129,5 +123,5 @@ a {
 }
 a:hover {
   cursor: pointer;
-  color: #e8514c;
+  color: #ff6564;
 }
