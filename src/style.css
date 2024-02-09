@@ -10,11 +10,13 @@ body {
   padding: 20px 50px;
 }
 h1 {
+  display: inline-block;
   font-family: "Outfit", sans-serif;
-  font-size: 62px;
+  font-size: 56px;
   letter-spacing: 0.2cm;
   text-align: center;
   margin: 10px auto;
+  padding-left: 16px;
 }
 .animated-gradient {
   background-image: linear-gradient(135deg, #feb692, #ff8264, #ff6564);
@@ -34,6 +36,13 @@ h1 {
   100% {
     background-position: 0% 50%;
   }
+}
+.robot {
+  display: inline-block;
+  text-align: center;
+  color: #615486;
+  font-size: 54px;
+  padding-left: 16px;
 }
 main {
   margin-bottom: 20px;
