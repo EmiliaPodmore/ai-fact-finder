@@ -12,7 +12,7 @@ body {
 h1 {
   display: inline-block;
   font-family: "Outfit", sans-serif;
-  font-size: 56px;
+  font-size: 54px;
   letter-spacing: 0.2cm;
   text-align: center;
   margin: 10px auto;
@@ -42,7 +42,7 @@ h1 {
   text-align: center;
   color: #615486;
   font-size: 54px;
-  padding-left: 16px;
+  padding-left: 30px;
 }
 main {
   margin-bottom: 20px;
@@ -58,7 +58,7 @@ form {
   font-size: 16px;
   font-family: "Comfortaa", sans-serif;
   line-height: 1.5;
-  border: 1px solid #352d4a;
+  border: none;
   border-radius: 10px;
   padding: 12px;
   width: 80%;
@@ -85,8 +85,8 @@ form {
 .submit-button:active {
   opacity: 0.5;
 }
-.hint {
-  color: #615386;
+small {
+  color: #615486;
   font-size: 12px;
   font-family: "Comfortaa", sans-serif;
   margin-bottom: 20px;
@@ -118,7 +118,7 @@ form {
   }
 }
 footer {
-  color: #615386;
+  color: #615486;
   font-size: 12px;
   font-family: "Comfortaa", sans-serif;
   text-align: center;
@@ -127,7 +127,7 @@ footer {
   border-top: 0.5px solid #03001e;
 }
 a {
-  color: #ff8264;
+  color: #615486;
   transition: all 0.3s ease-in-out;
 }
 a:hover {
