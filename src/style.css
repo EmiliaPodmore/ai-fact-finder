@@ -85,7 +85,7 @@ form {
 .submit-button:active {
   opacity: 0.5;
 }
-small {
+.hint {
   color: #615486;
   font-size: 12px;
   font-family: "Comfortaa", sans-serif;
