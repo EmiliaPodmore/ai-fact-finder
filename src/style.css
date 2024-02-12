@@ -19,7 +19,7 @@ h1 {
   padding-left: 16px;
 }
 .animated-gradient {
-  background-image: linear-gradient(135deg, #feb692, #ff8264, #ff6564);
+  background-image: radial-gradient(circle at 1.2% 5.3%, #e0c3fc, #8ec5fc);
   background-size: 400%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -54,7 +54,7 @@ form {
 }
 .topic {
   color: #757575;
-  background-color: #fef5ea;
+  background-color: aliceblue;
   font-size: 16px;
   font-family: "Comfortaa", sans-serif;
   line-height: 1.5;
@@ -70,7 +70,7 @@ form {
   font-family: "Comfortaa", sans-serif;
   padding: 14px 24px;
   margin-left: 12px;
-  background-color: #ff8264;
+  background-color: #8ec5fc;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -92,12 +92,12 @@ form {
   margin-bottom: 20px;
 }
 .fact {
-  color: #fef5ea;
+  color: aliceblue;
   background-color: #03001e;
   font-size: 18px;
   font-family: monospace;
   line-height: 2;
-  border-left: 3px solid #ff6564;
+  border-left: 3px solid #e0c3fc;
   padding: 20px;
 }
 .hidden {
@@ -132,5 +132,5 @@ a {
 }
 a:hover {
   cursor: pointer;
-  color: #ff6564;
+  color: #e0c3fc;
 }
