@@ -134,3 +134,8 @@ a:hover {
   cursor: pointer;
   color: #e0c3fc;
 }
+@media (max-width: 600px) {
+  .robot {
+    display: none;
+  }
+}
