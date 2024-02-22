@@ -1,3 +1,11 @@
+function changeTheme() {
+  let body = document.querySelector("body");
+
+  body.classList.toggle("warm");
+}
+let themeButton = document.querySelector(".theme-button");
+themeButton.addEventListener("click", changeTheme);
+
 function displayFact(response) {
   new Typewriter("#fact", {
     strings: response.data.answer,

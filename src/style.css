@@ -1,6 +1,26 @@
 body {
   background-color: #03001e;
 }
+.theme-button {
+  color: #615486;
+  background-color: #1d1a35;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin: auto;
+}
+.theme-button:hover {
+  color: #03001e;
+  background: #615486;
+}
 .container {
   background: rgb(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -133,6 +153,38 @@ a {
 a:hover {
   cursor: pointer;
   color: #e0c3fc;
+}
+.warm .animated-gradient {
+  background-image: radial-gradient(circle at 1.2% 5.3%, #feb692, #ff6564);
+  background-size: 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedGradient 20s ease infinite;
+}
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.warm .topic {
+  background-color: #fef5ea;
+}
+.warm .submit-button {
+  background-color: #feb692;
+}
+.warm .fact {
+  color: #fef5ea;
+  border-left: 3px solid #ff6564;
+}
+.warm a:hover {
+  color: #feb692;
 }
 @media (max-width: 600px) {
   .robot {
