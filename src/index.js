@@ -3,7 +3,7 @@ function changeTheme() {
 
   body.classList.toggle("warm");
 }
-let themeButton = document.querySelector(".theme-button");
+let themeButton = document.querySelector(".robot");
 themeButton.addEventListener("click", changeTheme);
 
 function displayFact(response) {
