@@ -5,7 +5,7 @@ body {
   color: #615486;
   background-color: #1d1a35;
   font-family: "Comfortaa", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   border-radius: 10px;
   border: none;
@@ -26,7 +26,7 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   max-width: 600px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px 50px;
 }
 h1 {
@@ -97,13 +97,9 @@ form {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 .submit-button:hover {
   transform: translateY(3px);
-  filter: contrast(80%);
-}
-.submit-button:active {
-  opacity: 0.5;
+  opacity: 80%;
 }
 .hint {
   color: #615486;
