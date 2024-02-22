@@ -2,13 +2,12 @@ body {
   background-color: #03001e;
 }
 .theme-button {
-  color: #615486;
-  background-color: #1d1a35;
-  font-family: "Comfortaa", sans-serif;
-  font-size: 10px;
-  text-align: center;
-  border-radius: 10px;
+  color: #2e2a4f;
+  background-color: #03001e;
   border: none;
+  font-size: 12px;
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -18,8 +17,7 @@ body {
   margin: auto;
 }
 .theme-button:hover {
-  color: #03001e;
-  background: #615486;
+  color: aliceblue;
 }
 .container {
   background: rgb(255, 255, 255, 0.1);
@@ -149,6 +147,9 @@ a {
 a:hover {
   cursor: pointer;
   color: #e0c3fc;
+}
+.warm .theme-button:hover {
+  color: #fef5ea;
 }
 .warm .animated-gradient {
   background-image: radial-gradient(circle at 1.2% 5.3%, #feb692, #ff6564);
