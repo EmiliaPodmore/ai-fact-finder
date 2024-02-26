@@ -172,7 +172,7 @@ a:hover {
   color: #feb692;
 }
 @media (max-width: 700px) {
-  .robot {
+  .fa-robot {
     display: none;
   }
   .topic {
