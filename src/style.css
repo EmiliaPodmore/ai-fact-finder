@@ -169,7 +169,7 @@ a:hover {
   border-left: 3px solid #ff6564;
 }
 .warm a:hover {
-  color: #feb692;
+  color: #ff6564;
 }
 @media (max-width: 700px) {
   .fa-robot {
