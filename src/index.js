@@ -1,9 +1,9 @@
-function changeTheme() {
+function changeTheme(event) {
   let body = document.querySelector("body");
-
   body.classList.toggle("warm");
 }
-let themeButton = document.querySelector(".robot");
+
+let themeButton = document.getElementById("themeButton");
 themeButton.addEventListener("click", changeTheme);
 
 function displayFact(response) {
