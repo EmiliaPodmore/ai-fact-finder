@@ -271,7 +271,7 @@ input:checked + .slider:before {
   h1 {
     font-size: 38px;
   }
-  .robot {
+  .fa-robot {
     display: none;
   }
   .topic {
