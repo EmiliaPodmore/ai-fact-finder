@@ -2,22 +2,15 @@ body {
   background-color: #03001e;
 }
 .container {
-  background: rgb(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   max-width: 600px;
   margin: 40px auto;
   padding: 20px 50px;
 }
-h1 {
-  display: inline-block;
-  font-family: "Russo One", sans-serif;
-  font-weight: 400;
-  font-size: 54px;
-  letter-spacing: 0.1cm;
-  text-align: center;
-  margin: 10px auto;
-  padding-left: 16px;
+main {
+  margin-bottom: 20px;
 }
 .animated-gradient {
   background-image: radial-gradient(circle at 1.2% 5.3%, #e0c3fc, #8ec5fc);
@@ -27,16 +20,25 @@ h1 {
   -webkit-text-fill-color: transparent;
   animation: animatedGradient 20s ease infinite;
 }
+
 @keyframes animatedGradient {
-  0% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
     background-position: 100% 50%;
   }
-  100% {
-    background-position: 0% 50%;
-  }
+}
+h1 {
+  display: inline-block;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: 0.1cm;
+  text-align: center;
+  margin: 10px auto;
+  padding-left: 18px;
 }
 .fa-robot {
   display: inline-block;
@@ -44,11 +46,9 @@ h1 {
   font-size: 54px;
   color: #615486;
   text-shadow: 1px 1px 2px rgba(3, 0, 30, 0.8);
-  padding-left: 44px;
+  padding-left: 28px;
 }
-main {
-  margin-bottom: 20px;
-}
+
 form {
   display: flex;
   padding: 20px 10px;
@@ -75,19 +75,16 @@ form {
   background-color: #8ec5fc;
   border-radius: 10px;
   border: none;
-  outline: none;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .submit-button:hover {
   transform: translateY(3px);
-  box-shadow: 1px 1px 2px rgba(3, 0, 30, 0.8);
 }
-
 .fact {
   color: aliceblue;
   background-color: #03001e;
-  font-size: 18px;
+  font-size: 16px;
   font-family: monospace;
   line-height: 2;
   border-left: 3px solid #e0c3fc;
@@ -96,6 +93,7 @@ form {
 .hidden {
   display: none;
 }
+
 footer {
   color: #615486;
   font-size: 11px;
@@ -105,14 +103,35 @@ footer {
   padding-top: 20px;
   border-top: 0.5px solid #03001e;
 }
+
 a {
   color: #615486;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
+
 a:hover {
   cursor: pointer;
   color: #e0c3fc;
 }
+.toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.switch {
+  font-size: 11px;
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 16px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 .spinner {
   --size: 30px;
   --first-block-clr: #e0c3fc;
@@ -121,18 +140,20 @@ a:hover {
   height: 100px;
   position: relative;
 }
+
 .spinner::after,
 .spinner::before {
-  box-sizing: border-box;
-  position: absolute;
   content: "";
+  position: absolute;
+  box-sizing: border-box;
   width: var(--size);
   height: var(--size);
   top: 50%;
-  animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
   left: 50%;
   background: var(--first-block-clr);
+  animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
 }
+
 .spinner::after {
   background: var(--second-block-clr);
   top: calc(50% - var(--size));
@@ -145,15 +166,12 @@ a:hover {
   100% {
     transform: none;
   }
-
   25% {
     transform: translateX(100%);
   }
-
   50% {
     transform: translateX(100%) translateY(100%);
   }
-
   75% {
     transform: translateY(100%);
   }
@@ -164,19 +182,17 @@ a:hover {
   100% {
     transform: none;
   }
-
   25% {
     transform: translateX(-100%);
   }
-
   50% {
     transform: translateX(-100%) translateY(-100%);
   }
-
   75% {
     transform: translateY(-100%);
   }
 }
+
 .warm .theme-button:hover {
   color: #fef5ea;
 }
@@ -187,17 +203,6 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animatedGradient 20s ease infinite;
-}
-@keyframes animatedGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 .warm .topic {
   background-color: #fef5ea;
@@ -217,23 +222,6 @@ a:hover {
   --first-block-clr: #feb692;
   --second-block-clr: #ff6564;
 }
-
-.toggle {
-  display: flex;
-  justify-content: center;
-}
-.switch {
-  font-size: 11px;
-  position: relative;
-  display: inline-block;
-  width: 56px;
-  height: 16px;
-}
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 .slider {
   position: absolute;
   cursor: pointer;
@@ -243,27 +231,29 @@ a:hover {
   bottom: 0;
   background-color: #8ec5fc;
   border: 1px solid #03001e;
-  transition: 0.4s;
   border-radius: 1px;
+  transition: 0.4s;
 }
 .slider:before {
-  position: absolute;
   content: "";
+  position: absolute;
   height: 21px;
   width: 19px;
-  border-radius: 2px;
   left: 3px;
   bottom: 5px;
   background-color: #5f5284;
   border: 1px solid #03001e;
+  border-radius: 2px;
   transition: 0.1s;
 }
 input:checked + .slider {
   background-color: #feb692;
 }
+
 input:focus + .slider {
   box-shadow: 0 0 1px #615486;
 }
+
 input:checked + .slider:before {
   transform: translateX(21px);
 }
