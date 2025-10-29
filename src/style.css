@@ -6,8 +6,8 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   max-width: 600px;
-  margin: 40px auto;
-  padding: 20px 50px;
+  margin: 60px auto;
+  padding: 20px 60px;
 }
 main {
   margin-bottom: 20px;
@@ -80,6 +80,7 @@ form {
 }
 .submit-button:hover {
   transform: translateY(3px);
+  box-shadow: 5px 5px 15px rgba(3, 0, 30, 0.4);
 }
 .fact {
   color: aliceblue;
